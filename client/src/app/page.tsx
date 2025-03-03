@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 
 import { v4 as uuidv4 } from 'uuid';
-import { io } from "socket.io-client";
 import { useRouter } from 'next/navigation';
 import JoinRoom from './components/joinroom';
 import Orb from './components/reactbitHomebg';
@@ -14,7 +13,7 @@ const generateRandomRoomId = () => {
   return uuidv4();
 }
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const [roomState, setRoomState] = useState<'default' | 'join' >('default');
 
@@ -46,4 +45,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

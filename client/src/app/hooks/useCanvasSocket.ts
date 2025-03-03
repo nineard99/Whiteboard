@@ -44,7 +44,7 @@ export function useCanvas(CANVAS_WIDTH: number, CANVAS_HEIGHT: number, GRID_SIZE
             gridCanvasRef.current.width = CANVAS_WIDTH;
             gridCanvasRef.current.height = CANVAS_HEIGHT;
         }
-    }, []);
+    }, [CANVAS_WIDTH, CANVAS_HEIGHT, opacity, color]);
     
     useEffect(() => {
         if (roomId) {
@@ -137,7 +137,7 @@ export function useCanvas(CANVAS_WIDTH: number, CANVAS_HEIGHT: number, GRID_SIZE
 
     
     useEffect(() => {
-        socket.on("draw", ({ dataroomId, x, y, prevX, prevY, isErasing, color, opacity }) => {
+        socket.on("draw", ({ x, y, prevX, prevY, isErasing, color, opacity }) => {
             if (!context) return;
     
             // ตรวจสอบว่าห้องตรงกับ roomId ก่อน

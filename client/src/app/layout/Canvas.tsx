@@ -12,7 +12,6 @@ export default function Canvas() {
    
         canvasRef,
         gridCanvasRef,
-        drawing,
         handleTouchStart,
         handleTouchMove,
         color,

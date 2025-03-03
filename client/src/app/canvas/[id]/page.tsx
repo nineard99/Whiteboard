@@ -2,7 +2,7 @@
 import Orb from '@/app/components/reactbitHomebg';
 import Room from '@/app/components/room';
 import Canvas from '@/app/layout/Canvas';
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useState } from "react";
 
 

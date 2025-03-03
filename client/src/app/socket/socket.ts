@@ -1,7 +1,8 @@
 import { io } from "socket.io-client";
 
-const socket = io("http://10.5.159.190:4000", {
+const socket = io(process.env.NEXT_PUBLIC_BACKEND_URL!, {
     transports: ["websocket", "polling"],
 });
+
 
 export default socket;
