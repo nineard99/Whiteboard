@@ -11,7 +11,6 @@ interface JoinRoomProps {
 const JoinRoom: React.FC<JoinRoomProps> = ({ onBack  }) => {
   const [roomCode, setRoomCode] = useState('');
 
-  const [error, setError] = useState('');
   const router = useRouter();
 
   const joinRoom = (): void => {
@@ -48,11 +47,6 @@ const JoinRoom: React.FC<JoinRoomProps> = ({ onBack  }) => {
         </div>
 
 
-        {error && (
-          <div className="mb-4 p-3 bg-red-500/20 border border-red-500/50 rounded-lg text-red-200 text-sm">
-            {error}
-          </div>
-        )}
 
         <button
           type="submit"
