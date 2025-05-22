@@ -7,8 +7,10 @@ In Build🛠
 - UI เบื้องต้นด้วย React
 
 
+
 🛠 สิ่งที่ใช้:
 - React.ts
 - Node.js + Express
 - Socket.IO
 - Canvas API
+-Library Reactbit ทำ UI Animation
